@@ -23,17 +23,19 @@ console.log(`task 1e`, finals2014[0]['Win condition']);
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Use getFinals to do the following:
 1. Receive data as a parameter
-2. Return an array of objects with the data of the teams that made it to the final stage
+2. Return an array of objects with the data of the teams that made it to
+ the final stage
 
 hint - you should be looking at the stage key inside of the objects
 */
 
-function getFinals(/* code here */)
+function getFinals(array)
 {
-    /* code here */
+    const finals = array.filter(obj => obj.Stage === "Final");
+    return finals;
 }
 
-
+console.log("Task 2", getFinals(fifaData));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 Use the higher-order function called getYears to do the following: 
